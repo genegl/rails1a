@@ -7,8 +7,17 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<%= render 'layouts/header' %>
+<div class="container">
+	<%= yield %>
 
-<%= yield %>
+
+	<div class="footer">
+		<small>
+		<%= link_to "Rails Application 1a", "http://example.com" %>
+		</small>
+	</div>
+</div>
 
 </body>
 </html>
